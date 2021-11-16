@@ -1,0 +1,24 @@
+{
+  "name": "from-manual",
+  "version": "1.0.0",
+  "description": "Minimal template for pandoc with example taken from the pandoc manual",
+  "main": "index.js",
+  "scripts": {
+    "packages": "sudo -i tlmgr update --list",
+    "simple.pdf": "pandoc --bibliography=biblio.bib --citeproc simple.md -o simple.pdf",
+    "acmcsl": "pandoc --bibliography=biblio.json -csl acm.csl --citeproc simple.md -o simple.pdf",
+    "docx": "pandoc --bibliography=biblio.json -csl acm.csl --citeproc simple.md -o simple.docx"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crguezl/pandoc-manual-example.git",
+    "open": "open simple.pdf"
+  },
+  "keywords": [],
+  "author": "Casiano Rodriguez Leon <crguezl@ull.edu.es> (https://crguezl.github.io/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crguezl/pandoc-manual-example/issues"
+  },
+  "homepage": "https://github.com/crguezl/pandoc-manual-example#readme"
+}
